@@ -23,7 +23,7 @@
             var msg="Hello,JavaScript";
             msg+="<br>";
             msg+="This is Monaca.";
-            $("#disp1").html(msg);
+            
 
             var a=0;
             var txt="";
@@ -35,6 +35,14 @@
             }
             txt+="a: "+a+"<br>";
             $("#disp2").html(txt);
+
+            var a=new Array(3);
+            a[0]=10;a[1]=50;a[2]=30;
+            var msg2="";
+            for(let i=0;i<a.length;i++){
+              msg2+=i+":"+a[i]+"<br>";
+            }
+            $("#disp1").html(msg+"<br>"+msg2);
             
         }
     </script>
